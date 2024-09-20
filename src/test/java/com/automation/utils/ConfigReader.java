@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.util.Properties;
 
 public class ConfigReader {
+
     static Properties props;
 
     public static void initReader() {
@@ -16,11 +17,11 @@ public class ConfigReader {
         }
     }
 
-    public static String getProperty(String key) {
+    public static String getConfigValue(String key) {
         return props.getProperty(key);
     }
 
-    public static void setProperty(String key, String value) {
+    public static void setConfigValue(String key, String value) {
         props.setProperty(key, value);
     }
 }

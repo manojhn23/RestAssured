@@ -9,6 +9,6 @@ public class Hooks {
     @Before
     public void setUp() {
         ConfigReader.initReader();
-        RestAssured.baseURI = ConfigReader.getProperty("base.url");
+        RestAssured.baseURI = ConfigReader.getConfigValue("base.url");
     }
 }
